@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en" {IF CLASSES}class="classes"{/IF} class="main">
+<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+
+<head> 
+
+<link href="FCC_Survey.css" rel="stylesheet" type="text/css">
+
+</head>
+
+	
+<div class="grid-container">
+
+<header> 
+  <h1 id="title"> Life Insurance Agent Service Survey</h1>
+  <p id="description"> Please fill out this survey form to help improve our service to our community, Thank you in Advance!</p>
+</header>
+
+<main> 
+<form action="/This will be sent to qualitycontrol.PHP" id="survey-form">
+
+<div class="form-div">
+	<label id="name-label" for="name"> Name</label>
+		<input 
+			type="text"
+			name="firstname"
+			id="name"
+			class="form-control"
+			placeholder="Enter your first name."
+			required>
+		&nbsp;&nbsp;	
+		<input 
+			type="text"
+			name="lastname"
+			id="lastname"
+			class="form-control"
+			placeholder="Enter your last name."
+			required>
+		</div>
+		&nbsp;&nbsp;
+<div class="form-div">
+	<label id="email-label" for="email">Email    </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+		required
+        placeholder="Enter your Email"
+        
+      />
+	  &nbsp;&nbsp;
+<div class="form-div">
+	<label id="number-label" for="tel">Phone Number    </label>
+      <input
+        type="tel"
+        name="phone"
+		pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}"
+        id="tel"
+        class="form-control"
+        placeholder="Format: (123) 456-7890"
+        required
+      />
+	  &nbsp;&nbsp;
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age</label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="0"
+        max="80"
+        class="form-control"
+        placeholder="Age"
+		required
+      />
+	  &nbsp;&nbsp;
+    </div>
+    <div class="form-group">
+      <p>Which is your marital status?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current status</option>
+        <option value="married">Maried</option>
+        <option value="divorced">Divorced</option>
+        <option value="single">Single</option>
+		<option value="single">Widowed</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>How often to do you think about getting life insurance?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="daily"
+          type="radio"
+          class="input-radio"
+          checked
+        />Daily</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="weekly"
+          type="radio"
+          class="input-radio"
+        />Weekly</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="monthly"
+          type="radio"
+          class="input-radio"
+        />Monthly</label
+      >
+	  <label
+        ><input
+          name="user-recommend"
+          value="seldom to hardly at all"
+          type="radio"
+          class="input-radio"
+        />seldom to hardly at all</label
+      ><label
+        ><input
+          name="user-recommend"
+          value="never"
+          type="radio"
+          class="input-radio"
+        />Never</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What made you decide to get more information about life insurance?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="SomeoneRecentlyDied">Someone Recently Died</option>
+        <option value="IhaveATerminalCondition">I have A Terminal Condition</option>
+        <option value="ACommercial">A Commercial</option>
+        <option value="Referral">A Suggestion from a friend</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What did you expect from the Life Insurance Agent?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Email-of-options"
+          type="checkbox"
+          class="input-checkbox"
+        />Email of options</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Mail-options-to-my-home"
+          type="checkbox"
+          class="input-checkbox"
+        />Mail options to my home</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Call-me-to-discuss"
+          type="checkbox"
+          class="input-checkbox"
+        />Call me to discuss</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="To-get-an-appointment-to-go-to-their-office"
+          type="checkbox"
+          class="input-checkbox"
+        />To get an appointment to go to their office.</label
+      >
+	  </div>
+	  
+	  <div class="form-group">
+      <p>
+        How was the Life Insurance Agent?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Courteous"
+          type="checkbox"
+          class="input-checkbox"
+        />Courteous</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="respectful"
+          type="checkbox"
+          class="input-checkbox"
+        />Respectful</label
+      >
+	  <label
+        ><input
+          name="prefer"
+          value="Early"
+          type="checkbox"
+          class="input-checkbox"
+        />Arrived Early</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Understanding-patient"
+          type="checkbox"
+          class="input-checkbox"
+        />Understanding and patient</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Rude-Pushy-disrespectful"
+          type="checkbox"
+          class="input-checkbox"
+        />Rude/Pushy/Disrespectful</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="noknowledge"
+          type="checkbox"
+          class="input-checkbox"
+        />Didn't know what they were talking about</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Late"
+          type="checkbox"
+          class="input-checkbox"
+        />Arrived Late</label
+      >      
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions the agent could have done better?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+ </form>
+
+
+
+
+
+
+</main>
+
+<footer class="footer"> 
+
+</footer>
+
+
+</html>
