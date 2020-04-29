@@ -1,0 +1,146 @@
+/*<!--  SEAMstyle.css --> 
+Justify-content options:
+The .profile-name element should have the justify-content property set to any of these values: center, flex-start, flex-end, space-between, space-around, or space-evenly.
+*/
+
+html{
+	height: auto;
+	margin: 0;
+}
+
+@media (min-width: 400px){
+    .container{
+      grid-template-areas:
+      "header header"
+      "advert content"
+      "footer footer";
+  
+    }
+  }
+.grid-container {
+	display: grid;
+	grid-template-areas:
+	'image'
+	'navbar navbar navbar'
+	'header header header'
+    'main main main'
+    'footer footer footer';
+	grid-template-rows repeat(5, minmax(20px, 100px));
+	grid-gap: 5px;
+	
+  background: url(underwater_light.jpg);
+  background-repeat: no-repeat;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  
+}
+.header{
+	display: flex;
+	justify-content:flex-start;
+	padding: 0%;
+	margin: 1%;
+	font-family: papyrus;
+	text-align: center;
+
+}
+
+#image{
+	height: auto;
+	width: 50%;
+	margin: 0%;
+    border-color: green;
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 10%;
+	box-shadow: 5px 20px 20px rgba(0,0,0,0.19), 5px 12px 6px rgba(0,0,0,0.23);
+}
+
+@media (min-width: 400px){
+    .main{
+      grid-template-areas:
+      "main main"
+      "content content"
+      "footer footer";
+  
+    }
+  }
+
+.main{
+	display: grid;
+	font-family: Arial, Helvetica, sans-serif;
+	height: auto;
+	width: 100%;
+	color: white;
+	text-align: left;
+	margin-top: 5%;
+	grid-template-areas:
+	'navbar navbar navbar'
+	'Blog_Article Blog_Article Blog_Article'
+    'contact contact contact'
+    'footer footer footer';
+	grid-template-rows repeat(3, minmax(20px, 100px));
+	grid-gap: 5px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background: linear-gradient(35deg, #CCFFFF,#FFCCCC);
+  font-size: 100%;
+  margin: 5%;
+  margin-top: 5%;
+		}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  padding: 3%;
+  text-decoration: none;
+  
+			}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+  margin: 5%;
+  
+				}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #f48dfd;
+  color: black;
+  size: 5%;
+  transform: scale(1);
+				}
+.wrapper:after{
+	display: block;
+	clear: both;
+	content: " ";
+	height: 0;
+	overflow: hidden;
+	justify-content: center;
+}
+
+.Blog_Article{
+	margin-left:5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	color: orange;
+	text-align: left;
+}	
+
+.contact{
+	padding: 1%;
+	margin-left:5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	text-align: left;
+	color: red;
+	}
+.footer{
+	
+}
