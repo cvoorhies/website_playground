@@ -2,18 +2,24 @@
 Justify-content options:
 This is a Free Code Camp project
 */
-.grid-container{
+#grid-container{
 	
 	display: grid;
-	grid-template-areas:
-    'header header header'
-    'menu main main main'
-	'section section section'
-    'footer footer footer';
-	/*grid-gap: 2px;*/
 	background-color: #2196F3;
 	padding: 1%;
-	justify-content: center;
+	grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0px;
+	
+}
+
+
+#header{
+	background-color: #e6f2ff;
+	text-align: center;
+	color: red;
+    font-family: Mouse Memoirs, sans-serif;
+    font-size: 2em ;
 	
 }
 
@@ -25,42 +31,43 @@ h2{
 	
 }
 
-.header{
-	background-color: #e6f2ff;
-	text-align: center;
-	color: red;
-    font-family: Mouse Memoirs, sans-serif;
-    font-size: 2em ;
-	
-}
 
-.main{
+#main{
 	background-color: #e6f2ff;
 	text-align: center;
-	padding-top:8px;
+	padding-top: 8px;
 }
 
 #image{
-    border-color: green;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+  display: block;
+  margin: 0 auto;
+	border-color: green;
     border-width: 6px;
     border-style: solid;
     border-radius: 25%;
-	text-align: center;
-	
-  
-}
-@media (max-width: 460px) {
-#img-caption{
-	text-align:center;
-	margin: 3px;
-	padding: 3px;
 }
 
+
+#section{
+	text-align: left;
+	background-color: #e6f2ff;
+	justify-content: left;
 }
-.section{
+
+h3{
+	font-family: sans-serif;
+	color: black;
+	justify-content: center;
+}
+
+#time-line{
 	text-align: left;
 }
-.quote{
+
+#quote{
 	color: #0000ff;
 	text-align: center;
 	padding-left: 25%;
@@ -73,7 +80,7 @@ a:hover {
 }
 
 
-.footer{
+#footer{
 	background-color: #e6f2ff;
 	
 }
